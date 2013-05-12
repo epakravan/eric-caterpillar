@@ -1,18 +1,26 @@
 #PA 5: The Very Hungry Caterpillars
-
-> The Very Hungry Caterpillars is a game based on the illustrated children's book, A Very Hungry Hungry Caterpillar by Eric Carle. The book tells the story of a single caterpillar who eats his way through a week of different fruits, desserts and leaves until building a cocoon and emerging a week later as a "very beautiful butterfly".
+> The Very Hungry Caterpillar is a game based on the illustrated children's book, A Very Hungry Hungry Caterpillar by Eric Carle. The book tells the story of a single caterpillar who eats his way through a week of different fruits, desserts and leaves until building a cocoon and emerging a week later as a "very beautiful butterfly".
+> See LICENCE.md file.
 
 ##Movable Items
-> 1. Fruits: Apples, Pears, Oranges, Plums and Strawberries will randomly generate in one of 5 lanes. These items will move across the screen horizontally, and the corresponding caterpillar in the lane can be controlled to eat the fruit to gain points.
-> 2. Sun & Moon: On game start, a sun rises and the game begins. Randomly the sun will set (move downward) and the moon will rise upwards. This will trigger a "bonus" night time segment of the game where desserts can be freely eaten for points.
-> 3. Desserts: Desserts are randomly generated and move across the screen next to the fruits. If eaten, the caterpillar goes into a cocoon and cannot eat for a few seconds and will decrease the score.
-> 4. Leaves: Leaves fall from a tree high above the caterpillars. As the leaves fall the user can "catch" the leaves before they hit the bottom by hitting the space bar. Each leaf will increment a health meter. This meter will give the user a new life when it fills up.
-> 5. Butterfly: If a caterpillar eats 10 consecutive fruits, a butterfly will fly in from above and replace the caterpillar. The butterfly scores 2x as many points for each fruit eaten than the caterpillar.
-
+> 1. Fruits: Apples, Pears, Oranges, Plums and Strawberries will randomly generate in one of 5 lanes. These items will move across the screen horizontally, and will follow the caterpillar's vertical movements. By pressing SPACEBAR when the fruit reaches the player, the Fruit is eaten, and the player gains +10 Points!! Missing a Fruit Item will cause a loss of one life.
+> 2. Leaves: Leaves fall from a tree high above the caterpillar. As the leaves fall the user can "catch" the leaves before they hit the bottom by hitting the RETURN (ENTER) KEY. Each leaf captured will add one life.
+> 3. Insects: One of three insects (a ladybug, spider, or fly) will fall onto the screen at random. Insects eat leaves that enter their path unless "wiped off the screen" by the caterpillar. These insects are moved by the user (caterpillar) and by other insects in any direction. Insects are removed by being pushed to any end of the screen, and all Insects and the player can push an unlimited number of other insects.
+> 4. Sun (Bonus!): Suns rise into the sky randomly and can be freely eaten for a 100 point bonus!! After rising, suns DO NOT MOVE, rather they dissaear from the screen after 15 seconds or if they are captured by the user. The user can capture a sun by simply navigating to the sun's location.
+> 5. Desserts: Desserts (Cakes, Ice Cream Cones, Cupcakes, and Pies) are randomly generated and move across the screen next to the fruits. While they appear to be fruits (and aim to confuse the user to thinking they are), Desserts differ from fruits in a few distict ways: Deserts cannot be eaten for points and simply move accross the screen without additional disturbances. Desserts enter the screen at the location of the player at the time, but do not follow the player vertically. Desserts offer an opportunity to collect leaves, suns, or destroy insects, but the user must first notice that it is a dessert. 
 ##Gameplay
-> The game is controlled by using the keyboard. Keys 1, 2, 3, 4 & 5 control the respective caterpillars. When pressed the caterpillar will open it's mouth and eat the next item that crosses its path within the next 0.3 seconds. The space bar will also be used to "catch" leaves before they hit the ground.
-> The score starts at 0, and increments with each fruit eaten and decrements with each dessert eaten.
-> The round ends after 60 seconds of game play. The first round begins on "Monday" with a single caterpillar. If the player reaches a specific score count in that round, the round will be "complete" and the user will advanced to Tuesday and so on. If the user does not reach that score, the user loses a life and must redo the round. Each round will introduce a new caterpillar and fruit until reaching day/round 5. Lives can be earned by capturing 10 leaves in any given round. The user "dies" when all lives are used and the user can restart at level 1 with a score of 0.
-
+> The game is mostly controlled by using the keyboard, but has several buttons.
+> The "Start" Button begins the game.
+> The UP, DOWN, LEFT and RIGHT keys control the movement of the caterpillar.
+> The SPACEBAR allows the caterpillar to eat a fruit when a fruit crosses it's path.
+> The ENTER (RETURN) KEY allows the caterpillar to run and quickly catch a falling leaf. The leaf must be ABOUT to cross the caterpillars horizontal path when pressing ENTER so that the caterpillar has enough time to run and grab the leaf. 
+> The P KEY can be used to pause the game, or return to normal gameplay when paused.
+> The game can also be paused by pressing the "Pause" button.
+> The round ends after all lives are lost, or the user resigns by pressing the "Resign" button.
 ##Images
-> I generated a few mock game views using photoshop. Visit http://uscMBSG.com/caterpillar to view the images of the gameplay.
+> This game has changed slightly since it's original proposal. Original gameplay mockups can be seen by visiting http://uscMBSG.com/caterpillar to view the images of the gameplay.
+> ![ScreenShot](Caterpillar_Screenshot_A.png)
+> Screenshot during gameplay (four of five items on the board).
+> ![ScreenShot](Caterpillar_Screenshot_A.png)
+> Screenshot with all items in play (a falling leaf can be seen at the bottom center).
+> ![ScreenShot](Caterpillar_Screenshot_A.png)

@@ -1,8 +1,8 @@
 # Game - Programming Assignments Private Repository
 ### Student Information
-  + Name: Tommy Trojan
-  + USC Email: ttrojan@usc.edu
-  + USC ID: 0123456789
+  + Name: Eric Pakravan
+  + USC Email: epakrava@usc.edu
+  + USC ID: 9984726061
 
 ### Game Information
   + Game Name: myAwsomeGame
@@ -14,12 +14,14 @@
 The grader should use the following procedure to compile and run the code:
 ```shell
 #Compile Instructions
-echo "Write command here"
+echo "make clean all"
 #Doxygen Instructions
-echo "Write command here"
-#Command to run
-echo "Write command here"
+echo "./game_epakrava"
 ```
 
-### Screenshots -- [Optional]
-You can either remove this section or add screenshots if you wish.
+### Screenshots
+> ![ScreenShot](Caterpillar_Screenshot_A.png)
+> Screenshot during gameplay (four of five items on the board).
+> ![ScreenShot](Caterpillar_Screenshot_A.png)
+> Screenshot with all items in play (a falling leaf can be seen at the bottom center).
+> ![ScreenShot](Caterpillar_Screenshot_A.png)
