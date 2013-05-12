@@ -8,7 +8,7 @@
   + Game Name: myAwsomeGame
   + Game Description: One sentence game description
   + [Game Design Doc](GameDesignDoc.md)
-
+  + [Licence Information](LICENCE.md)
 
 ### Compile & Run Instructions
 The grader should use the following procedure to compile and run the code:
