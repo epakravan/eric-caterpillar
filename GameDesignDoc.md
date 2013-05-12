@@ -1,89 +1,18 @@
-# Game Design Document
-This is a place holder for your game design document. You are advised to write your document in [Markdown](http://daringfireball.net/projects/markdown/) and the following section will show you how to write a document using Markdown markup.
+#PA 5: The Very Hungry Caterpillars
 
-Alternativley, you can write your document in plain text if you wish.
+> The Very Hungry Caterpillars is a game based on the illustrated children's book, A Very Hungry Hungry Caterpillar by Eric Carle. The book tells the story of a single caterpillar who eats his way through a week of different fruits, desserts and leaves until building a cocoon and emerging a week later as a "very beautiful butterfly".
 
-----
+##Movable Items
+> 1. Fruits: Apples, Pears, Oranges, Plums and Strawberries will randomly generate in one of 5 lanes. These items will move across the screen horizontally, and the corresponding caterpillar in the lane can be controlled to eat the fruit to gain points.
+> 2. Sun & Moon: On game start, a sun rises and the game begins. Randomly the sun will set (move downward) and the moon will rise upwards. This will trigger a "bonus" night time segment of the game where desserts can be freely eaten for points.
+> 3. Desserts: Desserts are randomly generated and move across the screen next to the fruits. If eaten, the caterpillar goes into a cocoon and cannot eat for a few seconds and will decrease the score.
+> 4. Leaves: Leaves fall from a tree high above the caterpillars. As the leaves fall the user can "catch" the leaves before they hit the bottom by hitting the space bar. Each leaf will increment a health meter. This meter will give the user a new life when it fills up.
+> 5. Butterfly: If a caterpillar eats 10 consecutive fruits, a butterfly will fly in from above and replace the caterpillar. The butterfly scores 2x as many points for each fruit eaten than the caterpillar.
 
-## Markdown
-Markdown is a human-readable structured plain text format that is used to convert text into HTML. GitHub automatically renders Markdown into HTML.
+##Gameplay
+> The game is controlled by using the keyboard. Keys 1, 2, 3, 4 & 5 control the respective caterpillars. When pressed the caterpillar will open it's mouth and eat the next item that crosses its path within the next 0.3 seconds. The space bar will also be used to "catch" leaves before they hit the ground.
+> The score starts at 0, and increments with each fruit eaten and decrements with each dessert eaten.
+> The round ends after 60 seconds of game play. The first round begins on "Monday" with a single caterpillar. If the player reaches a specific score count in that round, the round will be "complete" and the user will advanced to Tuesday and so on. If the user does not reach that score, the user loses a life and must redo the round. Each round will introduce a new caterpillar and fruit until reaching day/round 5. Lives can be earned by capturing 10 leaves in any given round. The user "dies" when all lives are used and the user can restart at level 1 with a score of 0.
 
-This is a crash course on how to use Markdown. The following section will show you the plain text used to generate the document shown in the rendering section.
-
-### Code
-
-```
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-
-You can also write in **bold** or _italics_. You can also ~~strike through~~ or write inline `Code Segments`
-
->Blockquotes are done as such.
-
-Just make sure to separate paragraphs with an emptyline. 
-Otherwise, they are considered in the same paragraph.
-
-You link to [Google](https://www.google.com) as such and lists are written has follows:
-  1. First you indent with two empty spaces.
-  1. Then, you use:
-    * `1.` to signal an ordered (i.e. numbered) list, or
-    * `*`, `-`, `+` to represent an unordered list.
-      1. Make sure to maintain indentation
-      1. As it is used to identify sub-lists
-  1. Numbering and symboles don't matter as they are auto-generated later.
-
-Tables are pretty easy to make:
-
-| Tables        | Are           | Easy          |
-| ------------- |:-------------:| -------------:|
-| left-aligned  | centered      | right-aligned |
-| header are    | bolded and    | centered      |
-| zebra stripes | are neat      | 1             |
-
-
-Images are added inline by using the following syntax
-![alt text](http://octodex.github.com/images/Professortocat_v2.png "Image Title")
-```
-
-----
-
-### Rendering
-This section shows the rendering of the plain text above.
-
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-
-You can also write in **bold** or _italics_. You can also ~~strike through~~ or write inline `Code Segments`
-
->Blockquotes are done as such.
-
-Just make sure to separate paragraphs with an emptyline. 
-Otherwise, they are considered in the same paragraph.
-
-You link to [Google](https://www.google.com) as such and lists are written has follows:
-  1. First you indent with two empty spaces.
-  1. Then, you use:
-    * `1.` to signal an ordered (i.e. numbered) list, or
-    * `*`, `-`, `+` to represent an unordered list.
-      1. Make sure to maintain indentation
-      1. As it is used to identify sub-lists
-  1. Numbering and symboles don't matter as they are auto-generated later.
-
-Tables are pretty easy to make:
-
-| Tables        | Are           | Easy          |
-| ------------- |:-------------:| -------------:|
-| left-aligned  | centered      | right-aligned |
-| header are    | bolded and    | centered      |
-| zebra stripes | are neat      | 1             |
-
-
-Images are added inline by using the following syntax
-![alt text](http://octodex.github.com/images/Professortocat_v2.png "Image Title")
-
+##Images
+> I generated a few mock game views using photoshop. Visit http://uscMBSG.com/caterpillar to view the images of the gameplay.
